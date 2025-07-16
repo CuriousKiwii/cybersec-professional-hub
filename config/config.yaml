@@ -1,0 +1,13 @@
+scanner:
+  default_threads: 100
+  timeout: 1
+  common_ports: [21, 22, 23, 25, 53, 80, 110, 443, 993, 995, 3389]
+
+vulnerability_checker:
+  timeout: 5
+  check_ssl: true
+  check_common_paths: true
+
+log_analyzer:
+  max_alerts: 100
+  suspicious_keywords: ["failed", "error", "unauthorized", "forbidden"]
